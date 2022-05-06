@@ -37,6 +37,7 @@ export class FacebookSocialButton extends React.Component {
       <TouchableOpacity
         style={{ ...styles.facebookStyle, ...this.props.buttonViewStyle }}
         onPress={this.props.onPress}
+        disabled={this.props.disabled}
       >
         <Image
           source={require("../images/facebook.png")}
