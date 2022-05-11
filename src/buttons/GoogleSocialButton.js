@@ -34,7 +34,7 @@ export class GoogleSocialButton extends React.Component {
       <TouchableOpacity
         style={{ ...styles.googleStyle, ...this.props.buttonViewStyle }}
         onPress={this.props.onPress}
-        disabled={this.style.disabled}
+        disabled={this.props.disabled}
       >
         <Image
           source={require("../images/google.png")}
